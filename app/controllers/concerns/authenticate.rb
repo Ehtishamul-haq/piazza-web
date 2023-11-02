@@ -33,6 +33,10 @@ module Authenticate
 			}
 		end
 
+		def log_out
+			Current.app_session&.destroy
+		end
+
 
 	private
 
